@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Discover"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        app:titleTextColor="#000000"
+        app:navigationIcon="@drawable/menu_icon"
+        app:menu="@menu/top_app_bar_menu"
+        app:layout_scrollFlags="scroll|enterAlways" />
+
+</com.google.android.material.appbar.AppBarLayout>
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_item1"
+        android:icon="Discover"
+        android:title="Item 1"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_item2"
+        android:icon="discover"
+        android:title="Item 2"
+        app:showAsAction="ifRoom" />
+
+    <!-- Add more menu items as needed -->
+
+</menu>
+
+
+    <!-- Navigation buttons -->
+    <!-- (Add your Home, Category, Community, and Itinerary buttons here) -->
+
+    <!-- Nature picture -->
+    <!-- (Add your nature image here) -->
+
+    <!-- Statistics section -->
+    <!-- (Replace placeholders with actual statistics) -->
+
+    <!-- Explore button -->
+    <!-- (Replace this with your Explore button) -->
+
+    <!-- Must Visit Places section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Must Visit Places"
+        android:textSize="24sp"
+        android:layout_below="@id/explore_button"
+        android:layout_margin="10dp" />
+
+    <!-- Picture carousel for Must Visit Places -->
+    <!-- (Replace this with your picture carousel) -->
+</RelativeLayout>
+
